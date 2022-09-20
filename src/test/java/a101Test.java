@@ -40,37 +40,37 @@ public class a101Test {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         System.out.println("Proje setup başarılı!");
     }
+    
+    By cerezler = By.xpath("//*[text()='Kabul Et']");
+    By giyimAksesuar= By.xpath("(//*[@title='GİYİM & AKSESUAR'])[1]");
+    By kadinIcGiyim = By.xpath("//a[@data-value='1565']");
+    By dizaltiCorap = By.xpath("//a[@data-value='1567']");
+    By ilkCorap = By.xpath("//*[@alt='Penti Kadın 50 Denye Pantolon Çorabı Siyah']");
+    By corapRengi = By.xpath("//*[text()='SİYAH']");
+    By sepeteEkleButton = By.xpath("//*[@class='add-to-basket button green block with-icon js-add-basket']");
+    By sepetiGoruntule = By.xpath("(//*[text()='Sepeti Görüntüle'])[2]");
+    By sepetiOnaylaButton = By.xpath("//*[@class='button green checkout-button block js-checkout-button']");
+    By uyeOlmadanDevamEtButton = By.xpath("//*[@title='ÜYE OLMADAN DEVAM ET']");
+    By emailEkrani = By.xpath("//*[@class='page-inner']");
+    String email = "HPTesting1@yandex.com";
+    By emailEnter = By.xpath("//*[@name='user_email']");
+    By adresEkrani = By.xpath("//*[@class='page-checkout js-page-checkout js-tab-box']");
+    By adresOlustur = By.xpath("(//*[@class='new-address js-new-address'])[1]");
+    By adresBasligi = By.xpath("//*[@placeholder='Ev adresim, iş adresim vb.']");
+    By musteriAdi = By.xpath("//*[@name='first_name']");
+    By musteriSoyadi = By.xpath("//*[@name='last_name']");
+    By musteriTelefonNumarasi = By.xpath("//*[@name='phone_number']");
+    By musteriIl = By.xpath("//*[@name='city']");
+    By musteriIlce = By.xpath("//*[@name='township']");
+    By musteriMahalle = By.xpath("//*[@class='js-district']");
+    By musteriAdres = By.xpath("//*[@name='line']");
+    By kaydetButton = By.xpath("//*[@class='button green js-set-country js-prevent-emoji']");
+    By kaydetVeDevamEtButton = By.xpath("//button[@class='button block green js-proceed-button']");
+    By siparisiTamamlaButton = By.xpath("//*[@class=\"order-complete\"]");
+    By odemeEkrani = By.xpath("//*[@class='page-checkout js-page-checkout js-tab-box']");
 
     @Test
     public void test() throws InterruptedException {
-
-        By cerezler = By.xpath("//*[text()='Kabul Et']");
-        By giyimAksesuar= By.xpath("(//*[@title='GİYİM & AKSESUAR'])[1]");
-        By kadinIcGiyim = By.xpath("//a[@data-value='1565']");
-        By dizaltiCorap = By.xpath("//a[@data-value='1567']");
-        By ilkCorap = By.xpath("//*[@alt='Penti Kadın 50 Denye Pantolon Çorabı Siyah']");
-        By corapRengi = By.xpath("//*[text()='SİYAH']");
-        By sepeteEkleButton = By.xpath("//*[@class='add-to-basket button green block with-icon js-add-basket']");
-        By sepetiGoruntule = By.xpath("(//*[text()='Sepeti Görüntüle'])[2]");
-        By sepetiOnaylaButton = By.xpath("//*[@class='button green checkout-button block js-checkout-button']");
-        By uyeOlmadanDevamEtButton = By.xpath("//*[@title='ÜYE OLMADAN DEVAM ET']");
-        By emailEkrani = By.xpath("//*[@class='page-inner']");
-        String email = "HPTesting1@yandex.com";
-        By emailEnter = By.xpath("//*[@name='user_email']");
-        By adresEkrani = By.xpath("//*[@class='page-checkout js-page-checkout js-tab-box']");
-        By adresOlustur = By.xpath("(//*[@class='new-address js-new-address'])[1]");
-        By adresBasligi = By.xpath("//*[@placeholder='Ev adresim, iş adresim vb.']");
-        By musteriAdi = By.xpath("//*[@name='first_name']");
-        By musteriSoyadi = By.xpath("//*[@name='last_name']");
-        By musteriTelefonNumarasi = By.xpath("//*[@name='phone_number']");
-        By musteriIl = By.xpath("//*[@name='city']");
-        By musteriIlce = By.xpath("//*[@name='township']");
-        By musteriMahalle = By.xpath("//*[@class='js-district']");
-        By musteriAdres = By.xpath("//*[@name='line']");
-        By kaydetButton = By.xpath("//*[@class='button green js-set-country js-prevent-emoji']");
-        By kaydetVeDevamEtButton = By.xpath("//button[@class='button block green js-proceed-button']");
-        By siparisiTamamlaButton = By.xpath("//*[@class=\"order-complete\"]");
-        By odemeEkrani = By.xpath("//*[@class='page-checkout js-page-checkout js-tab-box']");
 
 
         //"https://www.a101.com.tr/" url açılır
