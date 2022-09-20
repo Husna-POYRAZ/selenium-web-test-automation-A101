@@ -31,15 +31,6 @@ public class a101Test {
      */
 
     static WebDriver driver;
-
-    @BeforeClass
-    public static void setUp(){
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        System.out.println("Proje setup başarılı!");
-    }
     
     By cerezler = By.xpath("//*[text()='Kabul Et']");
     By giyimAksesuar= By.xpath("(//*[@title='GİYİM & AKSESUAR'])[1]");
@@ -68,6 +59,17 @@ public class a101Test {
     By kaydetVeDevamEtButton = By.xpath("//button[@class='button block green js-proceed-button']");
     By siparisiTamamlaButton = By.xpath("//*[@class=\"order-complete\"]");
     By odemeEkrani = By.xpath("//*[@class='page-checkout js-page-checkout js-tab-box']");
+
+    @BeforeClass
+    public static void setUp(){
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        System.out.println("Proje setup başarılı!");
+    }
+    
+
 
     @Test
     public void test() throws InterruptedException {
